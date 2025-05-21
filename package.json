@@ -1,0 +1,35 @@
+{
+    "name": "telegram-bydlo-bot",
+    "version": "1.0.0",
+    "description": "Telegram bot for IT bydlo information sharing",
+    "scripts": {
+        "dev": "ts-node index.ts",
+        "build": "tsc",
+        "lint": "eslint . --ext .ts",
+        "prestart": "npm run build",
+        "test": "jest",
+        "deploy": "npm run build && npm prune --production"
+    },
+    "dependencies": {
+        "@types/mongodb": "^4.0.7",
+        "@types/node": "^22.15.21",
+        "dotenv": "^16.5.0",
+        "mongodb": "6.7",
+        "node-schedule": "^2.1.1",
+        "telegraf": "^4.16.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "@types/node-schedule": "^2.1.7"
+    },
+    "keywords": [
+        "telegram",
+        "bot",
+        "it",
+        "mongodb"
+    ],
+    "author": "Nikita Putintsev",
+    "license": "MIT"
+}
