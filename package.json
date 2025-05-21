@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Telegram bot for IT bydlo information sharing",
     "scripts": {
-        "dev": "ts-node index.ts",
+        "start": "ts-node index.ts",
         "build": "tsc",
         "lint": "eslint . --ext .ts",
         "prestart": "npm run build",
